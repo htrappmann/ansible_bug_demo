@@ -1,0 +1,10 @@
+---
+- name: a task that notifies the handler
+  debug:
+    var: param
+  changed_when: True
+  notify:
+    - handler
+
+- name: flush handlers
+  meta: flush_handlers

@@ -1,0 +1,4 @@
+---
+- name: handler
+  debug:
+    var: param
